@@ -18,8 +18,15 @@
   },
   "homepage": "https://github.com/iac-gwc-2019/political-project-frontend#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.8.1",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-modules": "^1.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "sass": "^1.15.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }

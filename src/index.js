@@ -1,10 +1,11 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import AppRouter from "./components/AppRouter";
+
 
 class App extends React.Component {
   render() {
-    return
-      <div>"Hello World!"</div>
+    return <AppRouter/>;
   }
 }
  ReactDOM.render(<App />, document.getElementById("app-root"))
