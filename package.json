@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "clean": "rm-cli -r ./dist ./.cache",
+    "build": "npm run clean && parcel build src/index.html -d ./dist/ --public-url ./",
+    "start": "npm run clean && parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "sass": "^1.15.3"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "rm-cli": "^1.4.2"
   }
 }
