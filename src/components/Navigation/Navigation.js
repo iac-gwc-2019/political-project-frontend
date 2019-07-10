@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Navigation.scss';
 
 export default function Navigation() {
@@ -7,19 +7,18 @@ export default function Navigation() {
     <nav className={styles.navigation}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to="/subjects/">Subjects</Link>
+          <Link to='/subjects/'>Subjects</Link>
         </li>
         <li>
-          <Link to="/bills/">Bills</Link>
+          <Link to='/bills/'>Bills</Link>
         </li>
         <li>
-          <Link to="/politicians/">Politicians</Link>
+          <Link to='/politicians/'>Politicians</Link>
         </li>
       </ul>
     </nav>
-  )
-
+  );
 }
