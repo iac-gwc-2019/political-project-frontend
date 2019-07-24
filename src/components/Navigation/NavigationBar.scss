@@ -1,0 +1,27 @@
+.navigation {
+  ul {
+    float:right;
+    padding-right: 25px;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    //display: block;
+    padding: 25px 25px;
+    font-family: "system-ui";
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #00B4CC;
+  }
+
+}
+
+.subjectBtn {
+
+}

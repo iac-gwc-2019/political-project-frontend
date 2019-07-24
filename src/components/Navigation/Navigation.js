@@ -1,24 +1,28 @@
+// Component that holds logo and nav bar
+
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Navigation.scss';
+import {Link} from 'react-router-dom';
+import Logo from '../Logo/Logo'
+import NavigationBar from './NavigationBar';
+import styles from './Navigation.scss'
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
 export default function Navigation() {
   return (
-    <nav className={styles.navigation}>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/subjects/'>Subjects</Link>
-        </li>
-        <li>
-          <Link to='/bills/'>Bills</Link>
-        </li>
-        <li>
-          <Link to='/politicians/'>Politicians</Link>
-        </li>
-      </ul>
-    </nav>
-  );
+    <div className={styles.column}>
+      <Logo />
+      <NavigationBar />
+    </div>
+  )
 }
