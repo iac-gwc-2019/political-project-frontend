@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import styles from './BillStyle.scss';
 import BillInfo from './BillInfo';
 import BillSponsor from './BillSponsor';
@@ -7,7 +8,7 @@ import Recents from './Recents'
 import Summary from './Summary';
 import jsonData from '../../../mock_data/bills.json'; // TODO CLEANUP
 
-export default function Bills() {
+export default function Bills({match}) {
   const[billData, setBillData] = useState(null)
   useEffect(function() {
     if (!billData) {
@@ -32,11 +33,13 @@ export default function Bills() {
       <div className={styles.main}>
         <div className={styles.infoAndPicture}>
           <Picture></Picture>
+
           <BillInfo
               bill_name={billData ? billData.bill_name : 'default name'}
               primary_subject={billData ? billData.primary_subject : 'default name'}
               bill_id={billData ? billData.bill_id : 'default name'}>
           </BillInfo>
+
         </div>
 
         <Summary

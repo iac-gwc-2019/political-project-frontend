@@ -5,7 +5,6 @@ import Summary from './Summary.js';
 import BillsBlock from './BillsBlock.js';
 import styles from './SubjectStyle.scss';
 import jsonData from '../../../mock_data/subjects.json'; // TODO CLEANUP
-
 export default function Subjects() {
   const[subjectData, setSubjectData] = useState(null)
   useEffect(function() {
@@ -25,9 +24,8 @@ export default function Subjects() {
         })
     }
   })
-
   return (
-    <div className={styles.background}>
+      <div className={styles.background}>
       <div className={styles.main}>
         <div className={styles.imageAndInfo}>
           <div className={styles.image}>

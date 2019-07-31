@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from './components/AppRouter';
+import './index.scss';
+import $ from 'jquery';
+import * as serviceWorker from './components/serviceWorker';
 
-class App extends React.Component {
-  render() {
-    return <AppRouter />;
-  }
-}
 
-ReactDOM.render(<App />, document.getElementById('app-root'));
+ReactDOM.render(<AppRouter />, document.getElementById('app-root'));
+serviceWorker.unregister();
