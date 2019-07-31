@@ -1,0 +1,43 @@
+.main {
+  margin: 30px 100px 100px 100px;
+
+}
+
+.infoAndPicture {
+  display: inline-flex;
+}
+
+.billInfo {
+  margin-left: 50px;
+}
+
+.sponsorBlock {
+  background-color: lightgrey;
+  width: 600px;
+  height: 125px;
+  border-radius: 7px;
+}
+
+.sponsor{
+  padding-top: 2px;
+}
+
+.contactInfo {
+  font-size: 12px;
+  line-height: 0.2em;
+  margin: 0px 15px 15px 15px;
+}
+
+.sponsorBlock img {
+    margin: 12px;
+    float: left;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    padding-top: 10px;
+
+}
+
+.billImage {
+  border-radius: 50%;
+}

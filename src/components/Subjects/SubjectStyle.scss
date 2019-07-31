@@ -1,0 +1,45 @@
+.main {
+  margin: 30px 100px 100px 100px;
+}
+
+.image {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.imageAndInfo {
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+.subjectImage img{
+  border-radius: 50%;
+}
+
+.about {
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+
+.infoBlock {
+  width: 500px;
+  height: 40px;
+  background-color: lightgrey;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+.infoBlock img {
+    margin-right: 15px;
+    float: left;
+    border-radius: 0%
+}
+
+.infoBlock h5,
+.infoBlock p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
