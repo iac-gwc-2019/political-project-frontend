@@ -6,8 +6,6 @@ import Summary from './Summary.js';
 import BillsBlock from './BillsBlock.js';
 import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
-
-
 export default function Politicians() {
   const[politicianData, setPoliticianData] = useState(null)
   useEffect(function() {
@@ -27,7 +25,6 @@ export default function Politicians() {
         })
     }
   })
-
   return (
     <div className={styles.background}>
       <div className={styles.main}>

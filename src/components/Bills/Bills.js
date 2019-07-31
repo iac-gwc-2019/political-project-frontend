@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+>>>>>>> integrated app with react bootstrap for prettier
 import styles from './BillStyle.scss';
 import BillInfo from './BillInfo';
 import BillSponsor from './BillSponsor';
@@ -32,11 +33,13 @@ export default function Bills() {
       <div className={styles.main}>
         <div className={styles.infoAndPicture}>
           <Picture></Picture>
+          
           <BillInfo
               bill_name={billData ? billData.bill_name : 'default name'}
               primary_subject={billData ? billData.primary_subject : 'default name'}
               bill_id={billData ? billData.bill_id : 'default name'}>
           </BillInfo>
+>>>>>>> integrated app with react bootstrap for prettier
         </div>
 
         <Summary
