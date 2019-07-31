@@ -21,13 +21,6 @@
   "homepage": "https://github.com/iac-gwc-2019/political-project-frontend#readme",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
-<<<<<<< HEAD
-    "parcel-bundler": "^1.12.3",
-    "postcss-custom-properties": "^8.0.9",
-    "postcss-modules": "^1.4.1",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.9",
-=======
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "parcel-bundler": "^1.12.3",
@@ -36,17 +29,12 @@
     "postcss-modules": "^1.4.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
->>>>>>> 5bf01b5... integrated app with react bootstrap for prettier
     "react-dom": "^16.8.6",
     "react-grid-system": "^4.4.10",
     "react-navbar": "^3.0.0",
     "react-router-dom": "^5.0.1",
-<<<<<<< HEAD
-    "reactstrap": "^8.0.1"
-=======
     "reactstrap": "^8.0.1",
     "styled-components": "^4.3.2"
->>>>>>> 5bf01b5... integrated app with react bootstrap for prettier
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",

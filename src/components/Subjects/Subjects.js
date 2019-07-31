@@ -24,9 +24,7 @@ export default function Subjects() {
         })
     }
   })
-
   return (
-
       <div className={styles.background}>
       <div className={styles.main}>
         <div className={styles.imageAndInfo}>
