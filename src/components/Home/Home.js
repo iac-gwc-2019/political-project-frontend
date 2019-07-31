@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import React from 'react';
 import { SearchBar } from '../Search/SearchBar'
 import styled from 'styled-components'
 import { Row } from 'react-bootstrap'
