@@ -2,6 +2,11 @@
   margin: 30px 100px 100px 100px;
 }
 
+.background {
+  background-color: white;
+  padding: 50px;
+}
+
 .image {
   float: left;
   margin-right: 20px;
@@ -11,7 +16,12 @@
   margin-bottom: 50px;
 }
 
-.politicianImage img{
+.info {
+  padding-top: 1px;
+  padding-left: 200px;
+}
+
+.politicianImage img {
   border-radius: 50%;
 }
 

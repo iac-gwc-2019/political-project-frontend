@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function PoliticianInfo() {
+export default function PoliticianInfo({website, phone, party}) {
 
   return (
     <div>
-      <p>Email: aoc@gmail.com</p>
-      <p>Phone: (202) 225-3965</p>
-      <p>Political Party: Democratic </p>
+      <p>Website: {website}</p>
+      <p>Phone: {phone}</p>
+      <p>Political Party: {(party==="D") ? "Democratic" : "Republican"}</p>
     </div>
   )
 }

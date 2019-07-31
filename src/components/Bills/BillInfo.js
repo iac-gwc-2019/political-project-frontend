@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './BillStyle.scss';
 
-export default function BillInfo() {
+export default function BillInfo({bill_name, primary_subject, bill_id}) {
 
   return (
     <div className={styles.billInfo}>
-      <h3>Green New Deal</h3>
-      <p>Environmental Sustainabiliy</p>
-      <p>ID Number: 12345678</p>
+      <h3>{bill_name}</h3>
+      <p>{primary_subject}</p>
+      <p>ID Number: {bill_id}</p>
     </div>
   )
 }

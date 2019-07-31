@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home/Home';
-import Subjects from './Subjects/Subjects';
-import Bills from './Bills/Bills';
-import Politicians from './Politicians/Politicians';
-import Navigation from './Navigation/Navigation'
+import Subjects from './GeneralPages/AllSubjects/AllSubjects';
+import Bills from './GeneralPages/AllBills/AllBills';
+import Politicians from './GeneralPages/AllPoliticians/AllPoliticians';
+import Navigation from './Navigation/Navigation';
 
 function AppRouter() {
   return (
