@@ -6,6 +6,7 @@ import { Col } from 'react-bootstrap'
 import mainPic from '../../assets/main.png'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import styles from './Home.scss'
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Row>
         <Col xs={6}>
           <h2 style={{ color: '#000080' }}> Search for subjects, politicians, bills</h2>
-          <p style={{ color: '#008080' }}> Because political knowledge is power. </p>
+          <p className={styles.subheader}> Because political knowledge is power. </p>
         </Col>
         <Col>
           <img src={mainPic} style={{width:520, height:410}}/>

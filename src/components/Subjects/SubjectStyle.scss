@@ -1,49 +1,50 @@
-.main {
-  margin: 30px 100px 100px 100px;
-}
-
-.background {
-  background-color: white;
-  padding: 50px;
-}
-.image {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-.imageAndInfo {
-  flex-direction: row;
-  margin-bottom: 70px;
-}
-
+// row 1-- img and
 .subjectImage img{
   border-radius: 50%;
 }
 
-.about {
-  padding-top: 70px;
-  padding-bottom: 5px;
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
 }
 
+//for bills - row 2
 .infoBlock {
   width: 500px;
-  height: 40px;
+  height: 100px;
   background-color: lightgrey;
   padding: 20px;
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 7px;
 }
+.infoBlock:hover {
+  background-color:#DD929D;
+  text-decoration: none;
+}
 
-.infoBlock img {
+.infoBlock img { //bills icon
     margin-right: 15px;
     float: left;
     border-radius: 0%
 }
 
+.blockTitle { //"Relevant Bills"
+  font-family: 'Pacifico', cursive, sans-serif;
+  font-size: 20px;
+}
+
+.infoBlock h5 { //Bill Name
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 20px;
+}
+
 .infoBlock h5,
-.infoBlock p{
+.infoBlock p{ //Name and subheader
     margin-left: 15px;
     display: block;
     margin: 2px 0 0 0;
+}
+div .link {
+  text-decoration: none;
 }
