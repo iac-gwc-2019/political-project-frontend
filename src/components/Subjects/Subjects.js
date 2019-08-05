@@ -5,6 +5,13 @@ import Summary from './Summary.js';
 import BillsBlock from './BillsBlock.js';
 import styles from './SubjectStyle.scss';
 import jsonData from '../../../mock_data/subjects.json'; // TODO CLEANUP
+import {Card} from 'react-bootstrap';
+import { Container } from 'react-bootstrap'
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Astrodivider from '../Astrodivider/Astrodivider';
+import Div from '../Divider/Div'
+
 export default function Subjects() {
   const[subjectData, setSubjectData] = useState(null)
   useEffect(function() {
@@ -25,27 +32,39 @@ export default function Subjects() {
     }
   })
   return (
-      <div className={styles.background}>
-      <div className={styles.main}>
-        <div className={styles.imageAndInfo}>
-          <div className={styles.image}>
-            <Picture></Picture>
-          </div>
-          <Title
-            subject_name={subjectData ? subjectData.subject_name : null}>
-          </Title>
+    <>
+    <br/>
+    <br/>
+    <Row>
+      <Col xs={2}>
+        <div className={styles.image}>
+          <Picture></Picture>
         </div>
-
-        <Summary
-          description={subjectData ? subjectData.description : null}>
-        </Summary>
-
-        <h4>Bills</h4>
-        <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock>
-
-      </div>
-    </div>
+      </Col>
+      <Col>
+        <Card style={{ width: '50rem' }}>
+          <Card.Body>
+            <Card.Title className={styles.title}>{subjectData ? subjectData.subject_name : null}</Card.Title>
+            <Card.Subtitle></Card.Subtitle>
+            <Card.Text> {subjectData ? subjectData.description : null} </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+    <br/>
+    <Div/>
+    <br/>
+    <Row>
+      <h4 className={styles.blockTitle}>Relevant bills</h4>
+    </Row>
+    <Row>
+    <Col xs={2}/>
+    <Col>
+      <BillsBlock></BillsBlock>
+      <BillsBlock></BillsBlock>
+      <BillsBlock></BillsBlock>
+    </Col>
+    </Row>
+    </>
   );
 }

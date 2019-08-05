@@ -7,10 +7,6 @@
   padding: 50px;
 }
 
-.image {
-  float: left;
-  margin-right: 20px;
-}
 .imageAndInfo {
   flex-direction: row;
   margin-bottom: 50px;
@@ -27,7 +23,7 @@
 
 .infoBlock {
   width: 500px;
-  height: 40px;
+  height: 100px;
   background-color: lightgrey;
   padding: 20px;
   overflow: hidden;
