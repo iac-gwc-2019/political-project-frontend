@@ -20,7 +20,7 @@ const Styles = styled.div`
   }
   .ml-auto {
     font-family: Avenir;
-    font-weight: bold;
+    font-weight: semibold;
     font-size: 25px;
     margin-right: 50px;
   }
