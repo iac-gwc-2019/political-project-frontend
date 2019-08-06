@@ -45,8 +45,8 @@ export default function Bills({match}) {
         <Col>
           <Card style={{ width: '50rem' }}>
             <Card.Body>
-              <Card.Title>{billData ? billData.bill_name : 'default name'}</Card.Title>
-              <Card.Subtitle><BillInfo primary_subject={billData ? billData.primary_subject : 'default name'} bill_id={billData ? billData.bill_id : 'default name'}></BillInfo></Card.Subtitle>
+              <Card.Title className={styles.title}>{billData ? billData.bill_name : 'default name'}</Card.Title>
+              <Card.Subtitle className={styles.subtitle}><BillInfo primary_subject={billData ? billData.primary_subject : 'default name'} bill_id={billData ? billData.bill_id : 'default name'}></BillInfo></Card.Subtitle>
               <Card.Text> <Summary summary={billData ? billData.summary : 'default name'}></Summary></Card.Text>
             </Card.Body>
           </Card>
