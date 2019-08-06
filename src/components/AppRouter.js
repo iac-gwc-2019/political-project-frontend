@@ -8,6 +8,7 @@ import SearchAll from './Search/SearchAll'
 import About from './About/About'
 import NoMatch from './NoMatch/NoMatch';
 import SpecificSearch from './Search/SpecificSearch'
+import SearchResults from './SearchResults/SearchResults';
 import { Layout } from './Layout/Layout'
 import { NavigationBar } from './Navigation/NavigationBar'
 
@@ -25,6 +26,7 @@ function AppRouter() {
             <Route exact path="/all" component={SearchAll} />
             <Route exact path="/about" component={About} />
             <Route exact path="/yoursearchterm" component={SpecificSearch} />
+	    <Route exact path="/searchresults" component={SearchResults} />
             <Route component={NoMatch} />
           </Switch>
         </Layout>
