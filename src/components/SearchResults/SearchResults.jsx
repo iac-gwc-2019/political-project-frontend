@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 function TabContainer({ children, dir }) {
 
   return (
-    <Typography component="div" dir={dir} style={{ padding: 8 * 2 }}>
+    <Typography component="div" dir={dir} style={{ padding: 16 }}>
       {children}
     </Typography>
   );
