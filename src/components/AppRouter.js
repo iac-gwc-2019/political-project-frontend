@@ -25,16 +25,15 @@ function AppRouter() {
             <Route exact path="/" component={Home} />
             <Route exact path="/subjects" component={AllSubjects} />
             <Route exact path="/subjects/:subjectName" component={Subjects} />
-
             <Route exact path="/politicians" component={AllPoliticians} />
             <Route exact path="/politicians/:politicianId" component={Politicians} />
             <Route exact path="/bills" component={AllBills} />
+            <Route exact path="/bills/:billSlug" component={Bills} />
+
             <Route exact path="/all" component={SearchAll} />
             <Route exact path="/about" component={About} />
             <Route exact path="/yoursearchterm" component={SpecificSearch} />
 
-
-            <Route exact path="/greennewdeal" component={Bills} />
 	          <Route exact path="/searchresults" component={SearchResults} />
 
             <Route exact path="/404" component={NoMatch} />

@@ -23,8 +23,8 @@ export function getPeopleById(id){
    })
    .then(res => res.json())
    .then(res => {
-      console.log(res.data.personById);
-      return res.data.peopleById;
+     console.log(res)
+      return res.data.personById;
    });
 }
 

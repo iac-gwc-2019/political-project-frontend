@@ -18,10 +18,11 @@ export default function Bills({match}) {
   const[billData, setBillData] = useState(null)
   useEffect(function() {
     if (!billData) {
-      getBillById("sres710")
+      getBillById(match.params.billSlug)
         .then(data => {
           console.log(data)
           setBillData(data)
+
         })
         .catch(err => {
           console.log(err)
@@ -42,9 +43,10 @@ export default function Bills({match}) {
         <Col>
           <Card style={{ width: '50rem' }}>
             <Card.Body>
-              <Card.Title className={styles.title}>{billData ? billData.bill_name : 'default name'}</Card.Title>
-              <Card.Subtitle><BillInfo primary_subject={billData ? billData.primary_subject : 'default name'} bill_id={billData ? billData.bill_id : 'default name'}></BillInfo></Card.Subtitle>
-              <Card.Text> <Summary summary={billData ? billData.summary : 'default name'}></Summary></Card.Text>
+              <Card.Title className={styles.title}>{billData ? billData.bill_name : null}</Card.Title>
+              <Card.Subtitle><BillInfo primary_subject={billData ? billData.primary_subject : null}
+                bill_id={billData ? billData.bill_id : null}></BillInfo></Card.Subtitle>
+              <Card.Text> <Summary summary={billData ? billData.summary : null}></Summary></Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -66,10 +68,10 @@ export default function Bills({match}) {
         <Col xs={1}/>
         <Col xs={6}>
         <BillSponsor
-          sponsor_name={billData ? billData.sponsor_name : 'default name'}
-          sponsor_party={billData ? billData.sponsor_party : 'default name'}
-          website={billData ? billData.website : 'default name'}
-          phone={billData ? billData.phone : 'default name'}>
+          sponsor_name={billData ? `${billData.sponsor.first_name} ${billData.sponsor.last_name}` : 'default name'}
+          sponsor_party={billData ? billData.sponsor.sponsor_party : 'default name'}
+          website={billData ? billData.sponsor.website : 'default name'}
+          phone={billData ? billData.sponsor.phone : 'default name'}>
         </BillSponsor>
         </Col>
         <Col>

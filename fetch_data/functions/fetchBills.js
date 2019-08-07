@@ -1,3 +1,5 @@
+import {getPeopleById} from './fetchPoliticans';
+
 const fetch = require('node-fetch');
 
 export function getBillById(id){
@@ -20,8 +22,18 @@ export function getBillById(id){
    })
    .then(res => res.json())
    .then(res => {
-   console.log(res.data.billById);
-   return res.data.billById;
+     console.log(res)
+     if(res.errors) {
+       return Promise.reject(new Error('Bill does not exist'))
+     }
+     let bill = {...res.data.billById};
+     console.log(bill);
+     return getPeopleById(bill.sponsorId)
+        .then(sponsor => {
+          bill.sponsor = sponsor;
+          delete bill.sponsorId;
+          return bill
+        });
    });
 }
 

@@ -19,8 +19,7 @@ export default function Subjects({history, match}) {
     if (!subjectData) {
       getBillsBySubject(match.params.subjectName)
         .then(data => {
-          console.log(data)
-          setSubjectData({ subject_name: match.params.subjectName, bills: data})
+          setSubjectData(data)
         })
         .catch(err => {
           history.push('/404')
@@ -39,7 +38,7 @@ export default function Subjects({history, match}) {
       <Col>
         <Card style={{ width: '50rem' }}>
           <Card.Body>
-            <Card.Title className={styles.title}>{subjectData ? subjectData.subject_name : null}</Card.Title>
+            <Card.Title className={styles.title}>{subjectData ? match.params.subjectName : null}</Card.Title>
             <Card.Subtitle></Card.Subtitle>
             <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit tincidunt pulvinar. Etiam accumsan rhoncus fringilla. Proin nulla ex, varius quis dictum aliquet, placerat pulvinar augue. Fusce auctor enim quis lobortis pharetra. Pellentesque imperdiet viverra pulvinar. Integer at suscipit metus. Aliquam pharetra tellus ac turpis eleifend interdum ac a lorem. Sed rhoncus dictum ex lacinia condimentum. Etiam auctor nibh sed orci ultricies maximus. Vestibulum quam ligula, ultricies et neque sed, suscipit bibendum est. Nulla sollicitudin dapibus vehicula. Nullam pulvinar lacinia arcu. Etiam elementum diam id efficitur pulvinar.</Card.Text>
           </Card.Body>
@@ -57,7 +56,7 @@ export default function Subjects({history, match}) {
     <Col>
       {
         subjectData
-          ? subjectData.bills.map((bill) => {
+          ? subjectData.map((bill) => {
             return <BillsBlock key={bill.bill_id} bill={bill}/>
           })
           : null
