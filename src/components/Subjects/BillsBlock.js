@@ -6,14 +6,14 @@ import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 
-export default function BillsBlock() {
+export default function BillsBlock({ bill }) {
 
   return (
     <div>
-      <Link to="/bills" className={styles.link}><div className={styles.infoBlock}>
+      <Link to={`/bills/${bill.billSlug}`} className={styles.link}><div className={styles.infoBlock}>
         <img className={styles.img} src='http://icons.iconarchive.com/icons/icons8/windows-8/256/Ecommerce-Bill-icon.png'width='50px' height='50px'/>
-        <h5>Bill Name</h5>
-        <p>Description of Bill</p>
+        <h5>{bill.primary_subject}</h5>
+        <p>{bill.summary_short.substring(0, 40)}...</p>
         </div>
       </Link>
     </div>

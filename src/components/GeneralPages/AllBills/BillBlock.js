@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import styles from './AllBills.scss';
 
-export default function BillBlock({subject_name, short_summary}) {
+export default function BillBlock({subjectName, shortSummary}) {
 
   return (
     <div>

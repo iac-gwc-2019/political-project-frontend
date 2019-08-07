@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home/Home';
 import Subjects from './Subjects/Subjects';
 import Politicians from './Politicians/Politicians';
@@ -24,17 +24,20 @@ function AppRouter() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/subjects" component={AllSubjects} />
+            <Route exact path="/subjects/:subjectName" component={Subjects} />
+
             <Route exact path="/politicians" component={AllPoliticians} />
             <Route exact path="/bills" component={AllBills} />
             <Route exact path="/all" component={SearchAll} />
             <Route exact path="/about" component={About} />
             <Route exact path="/yoursearchterm" component={SpecificSearch} />
 
-            <Route exact path="/womensrights" component={Subjects} />
+
             <Route exact path="/greennewdeal" component={Bills} />
             <Route exact path="/alexanderlamar" component={Politicians} />
 	          <Route exact path="/searchresults" component={SearchResults} />
 
+            <Route exact path="/404" component={NoMatch} />
             <Route component={NoMatch} />
           </Switch>
         </Layout>

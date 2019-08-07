@@ -45,7 +45,9 @@ export function getBillsBySubject(subject){
    })
    .then(res => res.json())
    .then(res => {
-      console.log(res.data.billsBySubject);
+      if (res.errors) {
+        return Promise.reject(new Error('Subject doesn\'t exist.'))
+      }
       return res.data.billsBySubject;
    });
 }

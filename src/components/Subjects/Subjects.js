@@ -9,32 +9,27 @@ import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import Astrodivider from '../Astrodivider/Astrodivider';
 import Div from '../Divider/Div'
-import Badge from 'react-bootstrap/Badge'
+import { getBillsBySubject } from '../../../fetch_data/functions/fetchBills';
 
-export default function Subjects() {
+export default function Subjects({history, match}) {
   const[subjectData, setSubjectData] = useState(null)
   useEffect(function() {
     if (!subjectData) {
-      fetch('/')
-        .then(response => {
-          if(!response.ok) {
-            return Promise.reject(data);
-          }
-          return jsonData;
-        })
+      getBillsBySubject(match.params.subjectName)
         .then(data => {
-          setSubjectData(data)
+          console.log(data)
+          setSubjectData({ subject_name: match.params.subjectName, bills: data})
         })
         .catch(err => {
-          console.log(err)
+          history.push('/404')
         })
     }
   })
   return (
-  <>
-    <br/>
-    <br/>
+    <div className={styles.main}>
+
     <Row>
       <Col xs={2}>
         <div className={styles.image}>
@@ -46,7 +41,7 @@ export default function Subjects() {
           <Card.Body>
             <Card.Title className={styles.title}>{subjectData ? subjectData.subject_name : null}</Card.Title>
             <Card.Subtitle></Card.Subtitle>
-            <Card.Text> {subjectData ? subjectData.description : null} </Card.Text>
+            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit tincidunt pulvinar. Etiam accumsan rhoncus fringilla. Proin nulla ex, varius quis dictum aliquet, placerat pulvinar augue. Fusce auctor enim quis lobortis pharetra. Pellentesque imperdiet viverra pulvinar. Integer at suscipit metus. Aliquam pharetra tellus ac turpis eleifend interdum ac a lorem. Sed rhoncus dictum ex lacinia condimentum. Etiam auctor nibh sed orci ultricies maximus. Vestibulum quam ligula, ultricies et neque sed, suscipit bibendum est. Nulla sollicitudin dapibus vehicula. Nullam pulvinar lacinia arcu. Etiam elementum diam id efficitur pulvinar.</Card.Text>
           </Card.Body>
         </Card>
       </Col>
@@ -55,19 +50,20 @@ export default function Subjects() {
     <Div/>
     <br/>
     <Row>
-      <Col xs={2}/>
-      <Col>
-        <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
-      </Col>
+      <h4 className={styles.blockTitle}>Relevant bills</h4>
     </Row>
     <Row>
     <Col xs={2}/>
     <Col>
-      <BillsBlock></BillsBlock>
-      <BillsBlock></BillsBlock>
-      <BillsBlock></BillsBlock>
+      {
+        subjectData
+          ? subjectData.bills.map((bill) => {
+            return <BillsBlock key={bill.bill_id} bill={bill}/>
+          })
+          : null
+      }
     </Col>
     </Row>
-    </>
+    </div>
   );
 }
