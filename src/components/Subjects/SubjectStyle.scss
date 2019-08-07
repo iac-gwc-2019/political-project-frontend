@@ -4,8 +4,9 @@
 }
 
 .title {
-  font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 //for bills - row 2
@@ -19,7 +20,7 @@
   border-radius: 7px;
 }
 .infoBlock:hover {
-  background-color:#DD929D;
+  background-color:#78C1CA;
   text-decoration: none;
 }
 
@@ -30,12 +31,13 @@
 }
 
 .blockTitle { //"Relevant Bills"
-  font-family: 'Pacifico', cursive, sans-serif;
+  font-family: Avenir;
+  font-weight: bold;
   font-size: 20px;
 }
 
 .infoBlock h5 { //Bill Name
-  font-family: 'Signika Negative', sans-serif;
+  font-family: Avenir;
   font-size: 20px;
 }
 
