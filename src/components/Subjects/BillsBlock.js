@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from './SubjectStyle.scss';
 import { Link } from 'react-router-dom';
-import {Card} from 'react-bootstrap';
-import { Container } from 'react-bootstrap'
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
 
 export default function BillsBlock() {
 

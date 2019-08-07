@@ -10,6 +10,7 @@ import NoMatch from './NoMatch/NoMatch';
 import SpecificSearch from './Search/SpecificSearch'
 import { Layout } from './Layout/Layout'
 import { NavigationBar } from './Navigation/NavigationBar'
+import AllSubjects from './GeneralPages/AllSubjects/AllSubjects'
 
 function AppRouter() {
   return (
@@ -19,7 +20,7 @@ function AppRouter() {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/subjects" component={Subjects} />
+            <Route exact path="/subjects" component={AllSubjects} />
             <Route exact path="/politicians" component={Politicians} />
             <Route exact path="/bills" component={Bills} />
             <Route exact path="/all" component={SearchAll} />

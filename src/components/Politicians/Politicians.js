@@ -3,13 +3,14 @@ import Title from './Title.js';
 import PoliticianInfo from './PoliticianInformation.js';
 import Picture from './Picture.js';
 import Summary from './Summary.js';
-import BillsBlock from './BillsBlock.js';
+import BillsBlock from '../Subjects/BillsBlock.js';
 import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
 import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap'
 import { Col } from 'react-bootstrap'
+import Badge from 'react-bootstrap/Badge'
 import Div from '../Divider/Div'
 
 export default function Politicians() {
@@ -58,7 +59,7 @@ export default function Politicians() {
       <Col xs={2}>
       </Col>
       <Col>
-        <h4>Bills</h4>
+        <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
         <BillsBlock></BillsBlock>
         <BillsBlock></BillsBlock>
         <BillsBlock></BillsBlock>

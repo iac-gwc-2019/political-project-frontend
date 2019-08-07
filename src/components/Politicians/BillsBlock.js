@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './PoliticianStyle.scss';
 
 export default function BillsBlock() {
-
   return (
     <div>
       <div className={styles.infoBlock}>
