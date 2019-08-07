@@ -28,7 +28,6 @@ export default function Politicians() {
         })
     }
   })
-console.log("PoliticianData",politicianData);
   return (
     <>
     <br/>
