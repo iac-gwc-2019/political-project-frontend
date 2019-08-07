@@ -15,7 +15,7 @@ export default function Home() {
       <br/>
       <Row>
         <Col xs={6}>
-          <h2 style={{ color: '#000080' }}> Search for subjects, politicians, bills</h2>
+          <h2 className={styles.header}> <strong> Search for bills, politicians, & subjects </strong></h2>
           <p className={styles.subheader}> Because political knowledge is power. </p>
         </Col>
         <Col>

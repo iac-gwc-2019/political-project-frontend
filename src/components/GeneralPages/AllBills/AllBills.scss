@@ -2,42 +2,7 @@
   margin: 5%;
 }
 
-.image {
-  float: left;
-  margin-right: 20px;
-}
-.imageAndInfo {
-  flex-direction: row;
-  margin-bottom: 50px;
-}
-
-.infoBlock {
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.infoBlock img {
-    margin-right: 15px;
-    float: left;
-    border-radius: 50%
-}
-
-.infoBlock h5,
-.infoBlock p{
-    margin-left: 15px;
-    display: block;
-    margin: 2px 0 0 0;
-}
-
-.infoBlock p {
-  font-size: 12px;
-}
-
-.grayLine {
-  color: lightgray;
-  float: left;
-  width: 60%;
+.rows {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -1,25 +1,36 @@
+.main {
+  margin: 50px;
+}
+
 // row 1-- img and
 .subjectImage img{
   border-radius: 50%;
 }
 
 .title {
-  font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 //for bills - row 2
 .infoBlock {
   width: 500px;
-  height: 100px;
-  background-color: lightgrey;
+  height: 90px;
+  background-color: #e9e9e9;
   padding: 20px;
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 7px;
 }
+
 .infoBlock:hover {
   background-color:#DD929D;
+  text-decoration: none;
+}
+
+.infoBlock:hover {
+  background-color:#78C1CA;
   text-decoration: none;
 }
 
@@ -30,13 +41,14 @@
 }
 
 .blockTitle { //"Relevant Bills"
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px
 }
 
 .infoBlock h5 { //Bill Name
-  font-family: 'Signika Negative', sans-serif;
+  font-family: Avenir;
   font-size: 20px;
 }
 

@@ -1,16 +1,25 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {Card} from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import styles from './AllBills.scss';
 
-export default function BillBlock() {
+export default function BillBlock({subject_name, short_summary}) {
 
   return (
     <div>
-      <div className={styles.infoBlock}>
-        <img src='http://www.pngmart.com/files/7/Bill-Transparent-PNG.png' width='70px' height='70px'/>
-        <h5>Green New Deal</h5>
-        <p>Sponsor: AOC</p>
-      </div>
-      <hr className="grayLine" />
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+          <Card.Title>{subject_name}</Card.Title>
+          <Card.Text>
+            {short_summary}
+          </Card.Text>
+          <Button href="/womensrights" variant="outline-primary">Relevant Bills</Button>
+        </Card.Body>
+      </Card>
     </div>
   )
 }

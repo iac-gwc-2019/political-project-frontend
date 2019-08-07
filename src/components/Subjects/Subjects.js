@@ -32,7 +32,7 @@ export default function Subjects() {
     }
   })
   return (
-    <>
+  <>
     <br/>
     <br/>
     <Row>

@@ -15,11 +15,13 @@ const Styles = styled.div`
     color: #7789AA;
     text-decoration: none;
     &:hover {
-      color: #DD929D;
+
+      color: #398eb2
+;
     }
   }
   .ml-auto {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     margin-right: 50px;
   }
@@ -27,8 +29,8 @@ const Styles = styled.div`
     margin-left: 20px;
   }
   .btn {
-    font-family: 'Signika Negative', sans-serif;
-    background: #DD929D;
+    font-family: Avenir;
+    background: #78C1CA;
     color: white;
     border: none;
     border-radius: 9px;
