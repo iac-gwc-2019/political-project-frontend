@@ -2,27 +2,18 @@
   margin: 5%;
 }
 
-.image {
-  float: left;
-  margin-right: 20px;
-}
-.imageAndInfo {
-  flex-direction: row;
-  margin-bottom: 50px;
-}
-
 .infoBlock {
   width: 500px;
-  height: 50px;
+  height: 100px;
   padding: 20px;
   overflow: hidden;
   margin-bottom: 10px;
 }
 
-.infoBlock img {
-    margin-right: 15px;
-    float: left;
-    border-radius: 50%
+.politicianImg img {
+  margin-right: 15px;
+  float: left;
+  border-radius: 50%
 }
 
 .infoBlock h5,

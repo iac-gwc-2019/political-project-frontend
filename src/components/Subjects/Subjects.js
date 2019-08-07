@@ -32,9 +32,8 @@ export default function Subjects() {
     }
   })
   return (
-    <>
-    <br/>
-    <br/>
+    <div className={styles.main}>
+
     <Row>
       <Col xs={2}>
         <div className={styles.image}>
@@ -65,6 +64,6 @@ export default function Subjects() {
       <BillsBlock></BillsBlock>
     </Col>
     </Row>
-    </>
+    </div>
   );
 }

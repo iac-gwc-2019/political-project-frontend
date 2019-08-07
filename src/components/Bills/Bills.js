@@ -66,6 +66,7 @@ export default function Bills({match}) {
       </Recents>
 
       <BillSponsor
+        sponsor_picture={billData ? billData.sponsor_picture : 'http://icons.iconarchive.com/icons/papirus-team/papirus-status/256/avatar-default-icon.png'}
         sponsor_name={billData ? billData.sponsor_name : 'default name'}
         sponsor_party={billData ? billData.sponsor_party : 'default name'}
         website={billData ? billData.website : 'default name'}

@@ -4,7 +4,7 @@ export default function Title({subject_name}) {
 
   return (
     <div>
-      <h3>{subject_name}</h3>
+      <h3>subject_name}</h3>
     </div>
   )
 }

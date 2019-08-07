@@ -8,9 +8,9 @@ import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
 import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
-import { Row } from 'react-bootstrap'
-import { Col } from 'react-bootstrap'
-import Div from '../Divider/Div'
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Div from '../Divider/Div';
 
 export default function Politicians() {
   const[politicianData, setPoliticianData] = useState(null)
@@ -32,20 +32,32 @@ export default function Politicians() {
     }
   })
   return (
-    <>
-    <br/>
-    <br/>
+    <div className={styles.main}>
     <Row>
       <Col xs={2}>
         <div className={styles.image}>
-          <Picture></Picture>
+          <Picture picture={politicianData ? politicianData.picture : null}></Picture>
         </div>
       </Col>
       <Col>
         <Card style={{ width: '50rem' }}>
           <Card.Body>
-            <Card.Title><Title short_title={politicianData ? politicianData.short_title : null} first_name={politicianData ? politicianData.first_name : null} middle_name={politicianData ? politicianData.middle_name : null} last_name={politicianData ? politicianData.last_name : null}></Title></Card.Title>
-            <Card.Subtitle><PoliticianInfo website={politicianData ? politicianData.website : null} phone={politicianData ? politicianData.phone : null} party={politicianData ? politicianData.party : null}></PoliticianInfo></Card.Subtitle>
+            <Card.Title>
+              <Title
+                short_title={politicianData ? politicianData.short_title : null}
+                first_name={politicianData ? politicianData.first_name : null}
+                middle_name={politicianData ? politicianData.middle_name : null}
+                last_name={politicianData ? politicianData.last_name : null}>
+              </Title>
+            </Card.Title>
+            <Card.Subtitle>
+              <PoliticianInfo
+                website={politicianData ? politicianData.website : null}
+                phone={politicianData ? politicianData.phone : null}
+                party={politicianData ? politicianData.party : null}
+                picture={politicianData ? politicianData.picture : null}>
+              </PoliticianInfo>
+            </Card.Subtitle>
             <Card.Text> {politicianData ? politicianData.summary : null} </Card.Text>
           </Card.Body>
         </Card>
@@ -64,7 +76,7 @@ export default function Politicians() {
         <BillsBlock></BillsBlock>
       </Col>
     </Row>
-    </>
+    </div>
   );
 
 }

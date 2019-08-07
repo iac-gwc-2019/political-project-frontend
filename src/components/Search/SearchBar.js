@@ -16,7 +16,7 @@ import {
 
 const Styles = styled.div`
   .button {
-    background: #DD929D;
+    background: #398eb2;
     color: FEFEFF;
     border: none;
     border-radius: 9px;

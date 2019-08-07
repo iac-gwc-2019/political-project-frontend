@@ -15,12 +15,13 @@ const Styles = styled.div`
     color: #7789AA;
     text-decoration: none;
     &:hover {
-      color: #78C1CA;
+
+      color: #398eb2
+;
     }
   }
   .ml-auto {
-    font-family: Avenir;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     margin-right: 50px;
   }
