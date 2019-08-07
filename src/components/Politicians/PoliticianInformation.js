@@ -1,4 +1,5 @@
 import React from 'react';
+import { Table } from 'react-bootstrap'
 
 export default function PoliticianInfo({website, phone, party}) {
 
@@ -14,12 +15,15 @@ export default function PoliticianInfo({website, phone, party}) {
   //       return null;
   //   }
   // }
-
   return (
-    <div>
-      <p>Website: {website}</p>
-      <p>Phone: {phone}</p>
-      <p>Political Party: {party}</p>
-    </div>
+    <Table bordered size="sm">
+      <tbody>
+        <tr>
+          <td>Affiliated Party: {party}</td>
+          <td><i class="fas fa-phone-alt"></i> {phone}</td>
+          <td>Website: {website}</td>
+        </tr>
+      </tbody>
+    </Table>
   )
 }
