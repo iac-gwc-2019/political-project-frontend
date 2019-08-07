@@ -5,6 +5,7 @@ async function getPeopleAsync() {
         body: JSON.stringify({ query: `{
         peopleHouse {
         short_title
+        title
         first_name
         last_name
         party
@@ -25,6 +26,7 @@ async function getPeopleAsync() {
         body: JSON.stringify({ query: `{
         peopleSenate {
         short_title
+        title
         first_name
         last_name
         party
