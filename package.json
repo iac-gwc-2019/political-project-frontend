@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/iac-gwc-2019/political-project-frontend#readme",
   "dependencies": {
-    "@material-ui/core": "^4.3.0",
+    "@material-ui/core": "^4.3.1",
     "@material-ui/icons": "^4.2.1",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
