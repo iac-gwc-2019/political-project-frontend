@@ -7,6 +7,7 @@ export function getPeopleById(id){
    body: JSON.stringify({ query: `{
       personById(memberId: "${id}"){
         short_title
+        title
         first_name
         last_name
         party
