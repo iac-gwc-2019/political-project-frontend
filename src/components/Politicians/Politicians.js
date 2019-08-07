@@ -15,12 +15,13 @@ import Badge from 'react-bootstrap/Badge'
 import Div from '../Divider/Div'
 import { getPeopleById } from '../../../fetch_data/functions/fetchPoliticans';
 
-export default function Politicians() {
+export default function Politicians({match}) {
   const[politicianData, setPoliticianData] = useState(null)
   useEffect(function() {
     if (!politicianData) {
-      getPeopleById("M000355")
+      getPeopleById(match.params.politicianId)
         .then(data => {
+          console.log('data', data);
           setPoliticianData(data)
         })
         .catch(err => {
@@ -56,9 +57,9 @@ export default function Politicians() {
       </Col>
       <Col>
         <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
+        {/* <BillsBlock></BillsBlock>
         <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock>
+        <BillsBlock></BillsBlock> */}
       </Col>
       <Col>
       {politicianData && <TweetSidebar twitter_account={politicianData.twitter_account}/>}

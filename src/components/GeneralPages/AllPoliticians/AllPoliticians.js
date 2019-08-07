@@ -24,7 +24,8 @@ export default function AllPoliticians() {
         middle_name={politician.middle_name}
         last_name={politician.last_name}
         title={politician.title}
-        party={politician.party}>
+        party={politician.party}
+        id={politician.id}>
       </PoliticianBlock>
     );
   }) : null;
