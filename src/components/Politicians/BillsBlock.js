@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styles from './PoliticianStyle.scss';
 
 export default function BillsBlock() {
-
   return (
     <div>
       <Link to="/bills" className={styles.link}><div className={styles.infoBlock}>

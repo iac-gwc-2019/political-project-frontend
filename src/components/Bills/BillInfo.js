@@ -1,12 +1,19 @@
 import React from 'react';
 import styles from './BillStyle.scss';
+import { Table } from 'react-bootstrap'
 
 export default function BillInfo({bill_name, primary_subject, bill_id}) {
 
   return (
     <div className={styles.billInfo}>
-      <p>{primary_subject}</p>
-      <p>ID Number: {bill_id}</p>
+      <Table bordered size="sm">
+        <tbody>
+          <tr>
+            <td><i class="far fa-lightbulb"></i> {primary_subject}</td>
+            <td>ID Number: {bill_id}</td>
+          </tr>
+        </tbody>
+      </Table>
     </div>
   )
 }

@@ -9,8 +9,8 @@ import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import Astrodivider from '../Astrodivider/Astrodivider';
 import Div from '../Divider/Div'
+import Badge from 'react-bootstrap/Badge'
 
 export default function Subjects() {
   const[subjectData, setSubjectData] = useState(null)
@@ -32,8 +32,9 @@ export default function Subjects() {
     }
   })
   return (
-    <div className={styles.main}>
-
+  <>
+    <br/>
+    <br/>
     <Row>
       <Col xs={2}>
         <div className={styles.image}>
@@ -54,7 +55,10 @@ export default function Subjects() {
     <Div/>
     <br/>
     <Row>
-      <h4 className={styles.blockTitle}>Relevant bills</h4>
+      <Col xs={2}/>
+      <Col>
+        <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
+      </Col>
     </Row>
     <Row>
     <Col xs={2}/>
@@ -64,6 +68,6 @@ export default function Subjects() {
       <BillsBlock></BillsBlock>
     </Col>
     </Row>
-    </div>
+    </>
   );
 }

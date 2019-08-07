@@ -8,7 +8,6 @@ import { Button } from 'react-bootstrap';
 import styles from './AllSubjects.scss';
 
 export default function SubjectBlock({subject_name, short_summary}) {
-
   return (
     <div>
       <Card style={{ width: '18rem' }}>
@@ -21,5 +20,7 @@ export default function SubjectBlock({subject_name, short_summary}) {
         </Card.Body>
       </Card>
     </div>
-  )
+    </Link>
+  </div>
+)
 }

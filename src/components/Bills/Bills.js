@@ -10,6 +10,7 @@ import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import { Badge } from 'react-bootstrap'
 import Div from '../Divider/Div'
 
 export default function Bills({match}) {
@@ -46,7 +47,7 @@ export default function Bills({match}) {
           <Card style={{ width: '50rem' }}>
             <Card.Body>
               <Card.Title className={styles.title}>{billData ? billData.bill_name : 'default name'}</Card.Title>
-              <Card.Subtitle className={styles.subtitle}><BillInfo primary_subject={billData ? billData.primary_subject : 'default name'} bill_id={billData ? billData.bill_id : 'default name'}></BillInfo></Card.Subtitle>
+              <Card.Subtitle><BillInfo primary_subject={billData ? billData.primary_subject : 'default name'} bill_id={billData ? billData.bill_id : 'default name'}></BillInfo></Card.Subtitle>
               <Card.Text> <Summary summary={billData ? billData.summary : 'default name'}></Summary></Card.Text>
             </Card.Body>
           </Card>
@@ -56,22 +57,30 @@ export default function Bills({match}) {
       <Div />
       <br/>
       <Row>
-        <Col xs={2}>
+        <Col xs={1}/>
+        <Col xs={4}>
+          <Badge className={styles.blockTitle} pill variant="primary">Recent Action</Badge>
         </Col>
         <Col>
-
-      <Recents
-        latest_major_action_date={billData ? billData.latest_major_action_date : 'default name'}
-        latest_major_action={billData ? billData.latest_major_action : 'default name'}>
-      </Recents>
-
-      <BillSponsor
-        sponsor_picture={billData ? billData.sponsor_picture : 'http://icons.iconarchive.com/icons/papirus-team/papirus-status/256/avatar-default-icon.png'}
-        sponsor_name={billData ? billData.sponsor_name : 'default name'}
-        sponsor_party={billData ? billData.sponsor_party : 'default name'}
-        website={billData ? billData.website : 'default name'}
-        phone={billData ? billData.phone : 'default name'}>
-      </BillSponsor>
+          <Badge className={styles.blockTitle} pill variant="primary">Sponsor Person</Badge>
+        </Col>
+      </Row>
+      <br/>
+      <Row>
+        <Col xs={1}/>
+        <Col xs={4}>
+          <Recents
+            latest_major_action_date={billData ? billData.latest_major_action_date : 'default name'}
+            latest_major_action={billData ? billData.latest_major_action : 'default name'}>
+          </Recents>
+        </Col>
+        <Col>
+          <BillSponsor
+            sponsor_name={billData ? billData.sponsor_name : 'default name'}
+            sponsor_party={billData ? billData.sponsor_party : 'default name'}
+            website={billData ? billData.website : 'default name'}
+            phone={billData ? billData.phone : 'default name'}>
+          </BillSponsor>
         </Col>
       </Row>
       </>
