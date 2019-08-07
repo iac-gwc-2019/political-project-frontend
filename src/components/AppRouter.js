@@ -27,6 +27,7 @@ function AppRouter() {
             <Route exact path="/subjects/:subjectName" component={Subjects} />
 
             <Route exact path="/politicians" component={AllPoliticians} />
+            <Route exact path="/politicians/:politicianId" component={Politicians} />
             <Route exact path="/bills" component={AllBills} />
             <Route exact path="/all" component={SearchAll} />
             <Route exact path="/about" component={About} />
@@ -34,7 +35,6 @@ function AppRouter() {
 
 
             <Route exact path="/greennewdeal" component={Bills} />
-            <Route exact path="/alexanderlamar" component={Politicians} />
 	          <Route exact path="/searchresults" component={SearchResults} />
 
             <Route exact path="/404" component={NoMatch} />
