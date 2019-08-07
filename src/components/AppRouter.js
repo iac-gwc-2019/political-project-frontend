@@ -14,7 +14,6 @@ import SpecificSearch from './Search/SpecificSearch'
 import SearchResults from './SearchResults/SearchResults';
 import { Layout } from './Layout/Layout'
 import { NavigationBar } from './Navigation/NavigationBar'
-import AllSubjects from './GeneralPages/AllSubjects/AllSubjects'
 
 function AppRouter() {
   return (
