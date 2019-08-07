@@ -1,49 +1,55 @@
 .main {
-  margin: 30px 100px 100px 100px;
+  margin: 50px;
 }
 
-.background {
-  background-color: white;
-  padding: 50px;
-}
-
-.image {
-  float: left;
-  margin-right: 20px;
-}
-.imageAndInfo {
-  flex-direction: row;
-  margin-bottom: 50px;
-}
-
-.info {
-  padding-top: 1px;
-  padding-left: 200px;
-}
-
-.politicianImage img {
+// row 1-- img 
+.politicianImage img{
   border-radius: 50%;
 }
 
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+}
+
+//for bills - row 2
 .infoBlock {
   width: 500px;
-  height: 40px;
-  background-color: lightgrey;
+  height: 90px;
+  background-color: #e9e9e9;
   padding: 20px;
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 7px;
 }
 
-.infoBlock img {
+.infoBlock:hover {
+  background-color:#d0d0d0;
+  text-decoration: none;
+}
+
+.infoBlock img { //bills icon
     margin-right: 15px;
     float: left;
     border-radius: 0%
 }
 
+.blockTitle { //"Relevant Bills"
+  font-family: 'Poppins', cursive, sans-serif;
+  font-size: 20px;
+  margin-left: 15px
+}
+
+.infoBlock h5 { //Bill Name
+  font-size: 20px;
+}
+
 .infoBlock h5,
-.infoBlock p{
+.infoBlock p{ //Name and subheader
     margin-left: 15px;
     display: block;
     margin: 2px 0 0 0;
+}
+div .link {
+  text-decoration: none;
 }

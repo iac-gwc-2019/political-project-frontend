@@ -1,0 +1,10 @@
+.button {
+  background: #398eb2;
+  color: FEFEFF;
+  border: none;
+  border-radius: 9px;
+  width: 90px;
+}
+.form {
+  width: 50%;
+}

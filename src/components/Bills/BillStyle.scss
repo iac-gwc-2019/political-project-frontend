@@ -19,7 +19,7 @@
 .sponsorBlock {
   background-color: lightgrey;
   width: 600px;
-  height: 125px;
+  height: 100px;
   border-radius: 7px;
 }
 
@@ -39,10 +39,12 @@
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    padding-top: 10px;
-
 }
 
 .billImage {
-  border-radius: 50%;
+  border-radius: 0;
+}
+
+div .link {
+  text-decoration: none;
 }

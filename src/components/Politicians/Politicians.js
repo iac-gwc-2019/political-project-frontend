@@ -6,6 +6,12 @@ import Summary from './Summary.js';
 import BillsBlock from './BillsBlock.js';
 import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
+import {Card} from 'react-bootstrap';
+import { Container } from 'react-bootstrap'
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Div from '../Divider/Div';
+
 export default function Politicians() {
   const[politicianData, setPoliticianData] = useState(null)
   useEffect(function() {
@@ -26,45 +32,51 @@ export default function Politicians() {
     }
   })
   return (
-    <div className={styles.background}>
-      <div className={styles.main}>
-        <div className={styles.imageAndInfo}>
-          <div className={styles.image}>
-            <Picture
-              picture={politicianData ? politicianData.picture : null}>
-            </Picture>
-          </div>
-
-          <div className={styles.info}>
-            <Title
-              short_title={politicianData ? politicianData.short_title : null}
-              first_name={politicianData ? politicianData.first_name : null}
-              middle_name={politicianData ? politicianData.middle_name : null}
-              last_name={politicianData ? politicianData.last_name : null}>
-            </Title>
-            <PoliticianInfo
-              website={politicianData ? politicianData.website : null}
-              phone={politicianData ? politicianData.phone : null}
-              party={politicianData ? politicianData.party : null}>
-            </PoliticianInfo>
-          </div>
-
+    <div className={styles.main}>
+    <Row>
+      <Col xs={2}>
+        <div className={styles.image}>
+          <Picture picture={politicianData ? politicianData.picture : null}></Picture>
         </div>
-
-        <div>
-          <Summary
-            summary={politicianData ? politicianData.summary : null}>
-          </Summary>
-        </div>
-
-        <div>
-          <h4>Bills</h4>
-          <BillsBlock></BillsBlock>
-          <BillsBlock></BillsBlock>
-          <BillsBlock></BillsBlock>
-        </div>
-
-      </div>
+      </Col>
+      <Col>
+        <Card style={{ width: '50rem' }}>
+          <Card.Body>
+            <Card.Title>
+              <Title
+                short_title={politicianData ? politicianData.short_title : null}
+                first_name={politicianData ? politicianData.first_name : null}
+                middle_name={politicianData ? politicianData.middle_name : null}
+                last_name={politicianData ? politicianData.last_name : null}>
+              </Title>
+            </Card.Title>
+            <Card.Subtitle>
+              <PoliticianInfo
+                website={politicianData ? politicianData.website : null}
+                phone={politicianData ? politicianData.phone : null}
+                party={politicianData ? politicianData.party : null}
+                picture={politicianData ? politicianData.picture : null}>
+              </PoliticianInfo>
+            </Card.Subtitle>
+            <Card.Text> {politicianData ? politicianData.summary : null} </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+    <br/>
+    <Div />
+    <br/>
+    <Row>
+      <Col xs={2}>
+      </Col>
+      <Col>
+        <h4>Bills</h4>
+        <BillsBlock></BillsBlock>
+        <BillsBlock></BillsBlock>
+        <BillsBlock></BillsBlock>
+      </Col>
+    </Row>
     </div>
   );
+
 }

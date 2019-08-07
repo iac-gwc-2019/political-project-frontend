@@ -1,16 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Card } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import styles from './AllSubjects.scss';
 
-export default function SubjectBlock() {
+export default function SubjectBlock({subject_name, short_summary}) {
 
   return (
     <div>
-      <div className={styles.infoBlock}>
-        <img src='http://picklemethis.com/wp-content/uploads/2017/01/feminist.png' width='70px' height='70px'/>
-        <h5>Women&apos;s Rights</h5>
-        <p>Here is some more info about the topic</p>
-      </div>
-      <hr className="grayLine" />
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+          <Card.Title>{subject_name}</Card.Title>
+          <Card.Text>
+            {short_summary}
+          </Card.Text>
+          <Button href="/womensrights" variant="outline-primary">Relevant Bills</Button>
+        </Card.Body>
+      </Card>
     </div>
   )
 }

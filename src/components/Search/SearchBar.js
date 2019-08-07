@@ -16,7 +16,7 @@ import {
 
 const Styles = styled.div`
   .button {
-    background: #DD929D;
+    background: #398eb2;
     color: FEFEFF;
     border: none;
     border-radius: 9px;
@@ -29,7 +29,7 @@ const Styles = styled.div`
 export const SearchBar = () => (
   <Styles>
     <InputGroup className="form">
-    <FormControl inputRef={(ref) => { this.input = ref}} type="text" placeholder="Search" />
+    <FormControl type="text" placeholder="Search" />
     <InputGroup.Append>
       <Button className = "button" href="/yoursearchterm"><i className="fa fa-search"></i></Button>
     </InputGroup.Append>
