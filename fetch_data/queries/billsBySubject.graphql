@@ -1,0 +1,13 @@
+query{
+    billsBySubject(primary_subject: "women"){
+        bill_name
+        primary_subject
+        bill_id
+        summary
+        summary_short
+        latest_major_action_date
+        latest_major_action
+        billSlug
+        sponsorId
+    }
+}

@@ -10,21 +10,17 @@ import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import { Badge } from 'react-bootstrap'
-import Div from '../Divider/Div'
+import { Badge } from 'react-bootstrap';
+import Div from '../Divider/Div';
+import { getBillById } from '../../../fetch_data/functions/fetchBills';
 
 export default function Bills({match}) {
   const[billData, setBillData] = useState(null)
   useEffect(function() {
     if (!billData) {
-      fetch('/')
-        .then(response => {
-          if(!response.ok) {
-            return Promise.reject(data);
-          }
-          return jsonData;
-        })
+      getBillById("sres710")
         .then(data => {
+          console.log(data)
           setBillData(data)
         })
         .catch(err => {

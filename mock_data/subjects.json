@@ -1,5 +1,60 @@
-{
+[{
   "subject_name": "Women's Rights",
   "description": "Women's rights are the rights and entitlements claimed for women and girls worldwide, and formed the basis for the women's rights movement in the nineteenth century and feminist movement during the 20th century. In some countries, these rights are institutionalized or supported by law, local custom, and behavior, whereas in others they are ignored and suppressed. They differ from broader notions of human rights through claims of an inherent historical and traditional bias against the exercise of rights by women and girls, in favor of men and boys.",
-  "short_summary": "Learn more about the fight for women's rights"
-}
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Racial Inequality",
+  "description": "Racial inequality in the United States identifies the social advantages and disparities that affect different races within the United States. These can also be seen as a result of historic oppression, inequality of inheritance, or overall prejudice, especially against minority groups.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Religion",
+  "description": "The First Amendment to the U.S. Constitution says that everyone in the United States has the right to practice his or her own religion, or no religion at all.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Foreign Policy",
+  "description": "Foreign policy or foreign relations refers to how a government deals with other countries, and it includes such matters as trade and defense.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Immigration",
+  "description": "An immigration policy is any policy of a state that deals with the transit of persons across its borders into the country, but especially those that intend to work and stay in the country.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Environmental Issues",
+  "description": "Environmental policy is the commitment of an organization or government to the laws, regulations, and other policy mechanisms concerning environmental issues.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Healthcare",
+  "description": "Health policy refers to decisions, plans, and actions which were undertaken to achieve specific health care goals within the United States.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Economy",
+  "description": "Economic policy covers the systems for setting levels of taxation, government budgets, the money supply and interest rates as well as the labour market, national ownership, and many other areas of government interventions into the economy.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Education",
+  "description": "Education policy consists of the principles and government policies in the educational sphere as well as the collection of laws and rules that govern the operation of education systems.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "National Security",
+  "description": "National security is the security of a nation state, including its citizens, economy, and institutions, which is regarded as a duty of government.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "Criminal Justice",
+  "description": "The criminal justice system is the set of agencies and processes established by governments to control crime and impose penalties on those who violate laws.",
+  "short_summary": "Learn more here."
+},
+{
+  "subject_name": "LGBTQ+ Rights",
+  "description": "LGBTQ+ advocates have overcome enormous challenges and risks to their own personal safety to call out abuses of the human rights of LGBTI people, and force changes to laws that discriminate against them.",
+  "short_summary": "Learn more here."
+}]

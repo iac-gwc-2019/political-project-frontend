@@ -8,22 +8,17 @@ import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
 import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
-
 import { Row } from 'react-bootstrap'
 import { Col } from 'react-bootstrap'
 import Badge from 'react-bootstrap/Badge'
 import Div from '../Divider/Div'
+import { getPeopleById } from '../../../fetch_data/functions/fetchPoliticans';
+
 export default function Politicians() {
   const[politicianData, setPoliticianData] = useState(null)
   useEffect(function() {
     if (!politicianData) {
-      fetch('/')
-        .then(response => {
-          if(!response.ok) {
-            return Promise.reject(data);
-          }
-          return jsonData;
-        })
+      getPeopleById("M000355")
         .then(data => {
           setPoliticianData(data)
         })
