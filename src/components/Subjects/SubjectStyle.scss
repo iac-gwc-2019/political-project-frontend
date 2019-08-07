@@ -8,7 +8,8 @@
 }
 
 .title {
-  font-family: 'Rubik', sans-serif;
+  font-family: Avenir;
+  font-weight: bold;
   font-size: 35px;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .infoBlock:hover {
-  background-color:#d0d0d0;
+  background-color:#78C1CA;
   text-decoration: none;
 }
 
@@ -35,12 +36,14 @@
 }
 
 .blockTitle { //"Relevant Bills"
-  font-family: 'Poppins', cursive, sans-serif;
+  font-family: Avenir;
+  font-weight: bold;
   font-size: 20px;
   margin-left: 15px
 }
 
 .infoBlock h5 { //Bill Name
+  font-family: Avenir;
   font-size: 20px;
 }
 

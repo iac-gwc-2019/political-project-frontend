@@ -15,6 +15,7 @@ const Styles = styled.div`
     color: #7789AA;
     text-decoration: none;
     &:hover {
+
       color: #398eb2
 ;
     }
@@ -28,8 +29,8 @@ const Styles = styled.div`
     margin-left: 20px;
   }
   .btn {
-    font-family: 'Lato', sans-serif;
-    background: #398eb2;
+    font-family: Avenir;
+    background: #78C1CA;
     color: white;
     border: none;
     border-radius: 9px;
