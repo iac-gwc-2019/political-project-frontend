@@ -34,12 +34,6 @@
     border-radius: 0%
 }
 
-.blockTitle { //"Relevant Bills"
-  font-family: 'Poppins', cursive, sans-serif;
-  font-size: 20px;
-  margin-left: 15px
-}
-
 .infoBlock h5 { //Bill Name
   font-size: 20px;
 }
@@ -52,14 +46,17 @@
 }
 
 .blockTitle {
-  font-family: 'Signika Negative', sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
   font-size: 18px;
   margin-bottom: 20px;
 }
+
 .title {
   font-family: 'Pacifico', cursive;
   font-size: 40px;
 }
+
 div .link {
   text-decoration: none;
 }

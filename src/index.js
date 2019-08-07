@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from './components/AppRouter';
-import './index.scss';
 import $ from 'jquery';
 import * as serviceWorker from './components/serviceWorker';
 
