@@ -7,7 +7,8 @@ import BillsBlock from '../Subjects/BillsBlock.js';
 import styles from './PoliticianStyle.scss';
 import jsonData from '../../../mock_data/politicians.json'; // TODO CLEANUP
 import {Card} from 'react-bootstrap';
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap';
+import TweetSidebar from '../TweetSidebar/TweetSidebar';
 import { Row } from 'react-bootstrap'
 import { Col } from 'react-bootstrap'
 import Badge from 'react-bootstrap/Badge'
@@ -27,6 +28,7 @@ export default function Politicians() {
         })
     }
   })
+console.log("PoliticianData",politicianData);
   return (
     <>
     <br/>
@@ -51,13 +53,16 @@ export default function Politicians() {
     <Div />
     <br/>
     <Row>
-      <Col xs={2}>
+      <Col xs={1}>
       </Col>
       <Col>
         <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
         <BillsBlock></BillsBlock>
         <BillsBlock></BillsBlock>
         <BillsBlock></BillsBlock>
+      </Col>
+      <Col>
+      {politicianData && <TweetSidebar twitter_account={politicianData.twitter_account}/>}
       </Col>
     </Row>
     </>
