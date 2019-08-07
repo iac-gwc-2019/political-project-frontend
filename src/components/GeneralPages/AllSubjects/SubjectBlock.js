@@ -20,7 +20,5 @@ export default function SubjectBlock({subject_name, short_summary}) {
         </Card.Body>
       </Card>
     </div>
-    </Link>
-  </div>
 )
 }

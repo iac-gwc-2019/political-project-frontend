@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './BillStyle.scss';
-import { Link } from 'react-router-dom';
 
 export default function BillSponsor({sponsor_picture, sponsor_name, sponsor_party, website, phone}) {
   return (

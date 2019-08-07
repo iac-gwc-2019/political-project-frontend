@@ -58,29 +58,29 @@ export default function Bills({match}) {
       <br/>
       <Row>
         <Col xs={1}/>
-        <Col xs={4}>
-          <Badge className={styles.blockTitle} pill variant="primary">Recent Action</Badge>
+        <Col xs={6}>
+          <Badge className={styles.blockTitle} pill variant="primary">Sponsor Person</Badge>
         </Col>
         <Col>
-          <Badge className={styles.blockTitle} pill variant="primary">Sponsor Person</Badge>
+          <Badge className={styles.blockTitle} pill variant="primary">Recent Action</Badge>
         </Col>
       </Row>
       <br/>
       <Row>
         <Col xs={1}/>
-        <Col xs={4}>
+        <Col xs={6}>
+        <BillSponsor
+          sponsor_name={billData ? billData.sponsor_name : 'default name'}
+          sponsor_party={billData ? billData.sponsor_party : 'default name'}
+          website={billData ? billData.website : 'default name'}
+          phone={billData ? billData.phone : 'default name'}>
+        </BillSponsor>
+        </Col>
+        <Col>
           <Recents
             latest_major_action_date={billData ? billData.latest_major_action_date : 'default name'}
             latest_major_action={billData ? billData.latest_major_action : 'default name'}>
           </Recents>
-        </Col>
-        <Col>
-          <BillSponsor
-            sponsor_name={billData ? billData.sponsor_name : 'default name'}
-            sponsor_party={billData ? billData.sponsor_party : 'default name'}
-            website={billData ? billData.website : 'default name'}
-            phone={billData ? billData.phone : 'default name'}>
-          </BillSponsor>
         </Col>
       </Row>
       </>
