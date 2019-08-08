@@ -67,7 +67,7 @@ export default function AllSubjects() {
           <SubjectBlock
               slug={"religion"}
               subject_name={"Religion"}
-              short_summary={"The First Amendment to the U.S. Constitution says that everyone in the United States has the right to practice his or her own religion, or no religion at all."}
+              short_summary={"The First Amendment to the United States Constitution says that everyone in the United States has the right to practice his or her own religion, or no religion at all."}
               image={religionsimg}>
             </SubjectBlock>
           </Col>
