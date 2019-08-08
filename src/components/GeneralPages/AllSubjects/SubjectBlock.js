@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 import styles from './AllSubjects.scss';
 
 
-export default function SubjectBlock({subject_name, short_summary, image}) {
+export default function SubjectBlock({subject_name, short_summary, image, slug}) {
   return (
     <div>
       <Card style={{ width: '18rem' }}>
@@ -18,7 +18,7 @@ export default function SubjectBlock({subject_name, short_summary, image}) {
           <Card.Text>
             {short_summary}
           </Card.Text>
-          <Button href="/#/subjects/womensrights" variant="outline-primary">Learn more</Button>
+          <Link to={`/subjects/${slug}`}><Button variant="outline-primary">Learn more</Button></Link>
         </Card.Body>
       </Card>
     </div>

@@ -21,7 +21,7 @@ const Styles = styled.div`
     }
   }
   .ml-auto {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
     font-size: 25px;
     margin-right: 50px;
   }
@@ -29,8 +29,8 @@ const Styles = styled.div`
     margin-left: 20px;
   }
   .btn {
-    font-family: Avenir;
-    background: #78C1CA;
+    font-family: 'Signika Negative', sans-serif;
+    background: #00B4CC;
     color: white;
     border: none;
     border-radius: 9px;
@@ -47,12 +47,12 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/subjects">Subjects</Link>
+              <Link to="/subjects">subjects</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/politicians">Politicians</Link>
+              <Link to="/politicians">politicians</Link>
           </Nav.Link>
           </Nav.Item>
         </Nav>

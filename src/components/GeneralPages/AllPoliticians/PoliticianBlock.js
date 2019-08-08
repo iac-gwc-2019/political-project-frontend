@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import styles from './AllPoliticians.scss';
+import picture from '../../../assets/personicon.png'
 
 export default function PoliticanBlock({first_name, middle_name, last_name, title, party, id}) {
 
