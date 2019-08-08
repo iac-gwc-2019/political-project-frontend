@@ -20,7 +20,7 @@ export default function PoliticianInfo({website, phone, party}) {
       <tbody>
         <tr>
           <td>Affiliated Party: {party}</td>
-          <td><i class="fas fa-phone-alt"></i> {phone}</td>
+          <td><i className="fas fa-phone-alt"></i> {phone}</td>
           <td>Website: {website}</td>
         </tr>
       </tbody>

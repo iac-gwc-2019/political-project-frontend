@@ -9,7 +9,6 @@ import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import Astrodivider from '../Astrodivider/Astrodivider';
 import Div from '../Divider/Div'
 import { getBillsBySubject } from '../../../fetch_data/functions/fetchBills';
 

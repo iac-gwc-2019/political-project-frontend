@@ -39,12 +39,13 @@ export default function AllSubjects() {
   })
   return (
     <div className={styles.main}>
-      <h2>Subjects</h2>
-      <p>Search for bills by subject</p>
+      <br/>
+      <p className={styles.subheader}>Browse subjects or learn more to discover relevant bills:</p>
       <Container>
         <Row className={styles.rows}>
           <Col>
             <SubjectBlock
+            slug="women"
             subject_name={"Women's Rights"}
             short_summary={"Women's rights are the rights & entitlements claimed for women worldwide which formed the basis for the women's rights movement in the 19th century."}
             image={womensrightsimg}>
@@ -53,6 +54,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Racial Inequality"}
               short_summary={"Racial inequality in the United States identifies the social advantages & disparities that affect different races within the United States."}
               image={raceimg}>
@@ -71,6 +73,7 @@ export default function AllSubjects() {
         <Row className={styles.rows}>
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Foreign Policy"}
               short_summary={"Foreign policy or foreign relations refers to how a government deals with other countries, which includes such matters as trade & defense."}
               image={fpimg}>
@@ -79,6 +82,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Immigration"}
               short_summary={"Immigration policy refers to the transit of persons across borders into a country, especially those who intend to work & stay in that country."}
               image={immigrationimg}>
@@ -87,6 +91,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Environmental Policy"}
               short_summary={"Environmental policy is the commitment of an organization to the laws, regulations, & other policy mechanisms concerning the environment."}
               image={environmentimg}>
@@ -97,6 +102,7 @@ export default function AllSubjects() {
         <Row className={styles.rows}>
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Healthcare"}
               short_summary={"Health policy refers to decisions, plans, & actions which were undertaken to achieve specific health care goals within the United States."}
               image={healthcareimg}>
@@ -105,6 +111,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Economic Policy"}
               short_summary={"Economic policy refers to the system which set levels of taxation, government budgets, the money supply, interest rates & more into the economy."}
               image={economyimg}>
@@ -113,6 +120,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Education"}
               short_summary={"Education policy consists of the principles & policies of the educational sphere & the collection of laws that govern the operation of education systems."}
               image={educationimg}>
@@ -123,6 +131,7 @@ export default function AllSubjects() {
         <Row className={styles.rows}>
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"National Security"}
               short_summary="National security is the security of a nation state, including its citizens, economy, & institutions, which is regarded as a duty of government."
               image={nsimg}>
@@ -131,6 +140,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"Criminal Justice"}
               short_summary={"The criminal justice system is the set of agencies & processes established by governments to control crime & impose penalties on those who violate laws."}
               image={cjimg}>
@@ -139,6 +149,7 @@ export default function AllSubjects() {
 
           <Col>
             <SubjectBlock
+              slug="race"
               subject_name={"LGBTQ+ Rights"}
               short_summary={"LGBTQ+ advocates have overcome enormous challenges & risks to their own personal safety to fight discrimination & demand equal rights."}
               image={lgbtqimg}>

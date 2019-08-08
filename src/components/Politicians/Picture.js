@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PoliticianStyle.scss';
-
+import picture from '../../assets/personicon.png'
 
 export default function Picture({picture}) {
 

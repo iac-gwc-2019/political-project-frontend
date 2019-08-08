@@ -2,16 +2,6 @@
   margin: 50px;
 }
 
-// row 1-- img
-.politicianImage img{
-  border-radius: 50%;
-}
-
-.title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 35px;
-}
-
 //for bills - row 2
 .infoBlock {
   width: 500px;
@@ -70,4 +60,8 @@ h3{
 h5 {
   font-family: Avenir;
   font-weight: bold;
+}
+
+.politicianImage img{
+  border-radius: 50%;
 }
