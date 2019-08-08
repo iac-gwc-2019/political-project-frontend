@@ -40,8 +40,8 @@ export default function AllSubjects() {
   })
   return (
     <div className={styles.main}>
-      <h2>Subjects</h2>
-      <p>Search for bills by subject</p>
+      <br/>
+      <p className={styles.subheader}>Browse subjects or learn more to discover relevant bills:</p>
       <Container>
         <Row className={styles.rows}>
           <Col>

@@ -5,12 +5,9 @@ import Subjects from './Subjects/Subjects';
 import Politicians from './Politicians/Politicians';
 import Bills from './Bills/Bills';
 import AllSubjects from './GeneralPages/AllSubjects/AllSubjects';
-import AllBills from './GeneralPages/AllBills/AllBills';
 import AllPoliticians from './GeneralPages/AllPoliticians/AllPoliticians';
-import SearchAll from './Search/SearchAll'
-import About from './About/About'
+import About from './About/About';
 import NoMatch from './NoMatch/NoMatch';
-import SpecificSearch from './Search/SpecificSearch'
 import SearchResults from './SearchResults/SearchResults';
 import { Layout } from './Layout/Layout'
 import { NavigationBar } from './Navigation/NavigationBar'
@@ -27,15 +24,8 @@ function AppRouter() {
             <Route exact path="/subjects/:subjectName" component={Subjects} />
             <Route exact path="/politicians" component={AllPoliticians} />
             <Route exact path="/politicians/:politicianId" component={Politicians} />
-            <Route exact path="/bills" component={AllBills} />
-            <Route exact path="/bills/:billSlug" component={Bills} />
-
-            <Route exact path="/all" component={SearchAll} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/yoursearchterm" component={SpecificSearch} />
-
 	          <Route exact path="/searchresults" component={SearchResults} />
-
             <Route exact path="/404" component={NoMatch} />
             <Route component={NoMatch} />
           </Switch>

@@ -6,7 +6,7 @@ export default function BillsBlock() {
   return (
     <div>
       <Link to="/bills" className={styles.link}><div className={styles.infoBlock}>
-        <img className={styles.img} src='http://icons.iconarchive.com/icons/icons8/windows-8/256/Ecommerce-Bill-icon.png'width='50px' height='50px'/>
+        <img className={styles.img} src='https://www.focusdc.org/sites/focusdc.org/files/styles/timeline_item/public/bill%20icon%20480_0.png?itok=gnNECIMn'width='50px' height='50px'/>
         <h5>Bill Name</h5>
         <p>Description of Bill</p>
         </div>

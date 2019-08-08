@@ -20,7 +20,9 @@ async function getPeopleAsync() {
         headers: { 'Content-Type': 'application/json' },
         });
     const data = await response.json()
+    console.log(data)
     const peopleHouse = data.data.peopleHouse;
+
 
     const response2 = await fetch('http://localhost:4000/', {
         body: JSON.stringify({ query: `{
@@ -42,7 +44,7 @@ async function getPeopleAsync() {
         });
     const data2 = await response2.json()
     const peopleSenate = data2.data.peopleSenate;
-    
+
     const people = [].concat(peopleSenate, peopleHouse);
     return people;
 }

@@ -1,16 +1,38 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import styles from './SearchBar.scss';
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButtonDropdown,
+  InputGroupDropdown,
+  Input,
+  Button,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  FormControl,
+  DropdownItem
+} from 'react-bootstrap';
+ import styled from 'styled-components'
 
-export default function SearchBar(){
-  return (
-    <div className={styles.wrap}>
-      <div className={styles.search}>
-        <input type="text" className={styles.searchTerm} placeholder="What are you looking for?"/>
-          <button type="submit" className={styles.searchButton}>
-            <i className="fa fa-search"></i>
-          </button>
-      </div>
-    </div>
-  )
-}
+const Styles = styled.div`
+  .button {
+    background: #398eb2;
+    color: FEFEFF;
+    border: none;
+    border-radius: 9px;
+    width: 80px;
+  }
+  .form {
+    width: 85%;
+  }
+`
+export const SearchBar = () => (
+  <Styles>
+    <InputGroup className="form">
+    <FormControl type="text" placeholder="Search" />
+    <InputGroup.Append>
+      <Button className = "button" href="/yoursearchterm"><i className="fa fa-search"></i></Button>
+    </InputGroup.Append>
+   </InputGroup>
+  </Styles>
+)
