@@ -19,6 +19,7 @@ export default function SubjectBlock({subject_name, short_summary, image, slug})
             {short_summary}
           </Card.Text>
           <Link to={`/subjects/${slug}`}><Button variant="outline-primary">Learn more</Button></Link>
+
         </Card.Body>
       </Card>
     </div>

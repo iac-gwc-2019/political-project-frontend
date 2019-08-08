@@ -33,8 +33,8 @@ export default function AllPoliticians() {
 
   return (
     <div className={styles.main}>
-      <h2>Politicians</h2>
-      <p>Learn more about politicians</p>
+      <h2 className={styles.header}>Politicians</h2>
+      <p className={styles.subheader}>Learn more about politicians</p>
       {allPoliticianBlocks}
     </div>
   )
