@@ -18,6 +18,7 @@ export default function Subjects({history, match}) {
     if (!subjectData) {
       getBillsBySubject(match.params.subjectName)
         .then(data => {
+          console.log(data)
           setSubjectData(data)
         })
         .catch(err => {

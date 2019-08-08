@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
@@ -44,116 +45,105 @@ export default function AllSubjects() {
       <Container>
         <Row className={styles.rows}>
           <Col>
-            <SubjectBlock
-            slug="women"
+          <Link to="/subjects/women" className={styles.link}><SubjectBlock
             subject_name={"Women's Rights"}
             short_summary={"Women's rights are the rights & entitlements claimed for women worldwide which formed the basis for the women's rights movement in the 19th century."}
             image={womensrightsimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/citizenship" className={styles.link}><SubjectBlock
               subject_name={"Racial Inequality"}
               short_summary={"Racial inequality in the United States identifies the social advantages & disparities that affect different races within the United States."}
               image={raceimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
+          <Link to="/subjects/religion" className={styles.link}><SubjectBlock
               subject_name={"Religion"}
               short_summary={"The First Amendment to the U.S. Constitution says that everyone in the United States has the right to practice his or her own religion, or no religion at all."}
               image={religionsimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
         </Row>
 
         <Row className={styles.rows}>
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/africa" className={styles.link}><SubjectBlock
               subject_name={"Foreign Policy"}
               short_summary={"Foreign policy or foreign relations refers to how a government deals with other countries, which includes such matters as trade & defense."}
               image={fpimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/immigration" className={styles.link}><SubjectBlock
               subject_name={"Immigration"}
               short_summary={"Immigration policy refers to the transit of persons across borders into a country, especially those who intend to work & stay in that country."}
               image={immigrationimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/climate" className={styles.link}><SubjectBlock
               subject_name={"Environmental Policy"}
               short_summary={"Environmental policy is the commitment of an organization to the laws, regulations, & other policy mechanisms concerning the environment."}
               image={environmentimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
         </Row>
 
         <Row className={styles.rows}>
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/health" className={styles.link}><SubjectBlock
               subject_name={"Healthcare"}
               short_summary={"Health policy refers to decisions, plans, & actions which were undertaken to achieve specific health care goals within the United States."}
               image={healthcareimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/finance" className={styles.link}><SubjectBlock
               subject_name={"Economic Policy"}
               short_summary={"Economic policy refers to the system which set levels of taxation, government budgets, the money supply, interest rates & more into the economy."}
               image={economyimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+          <Link to="/subjects/education" className={styles.link}><SubjectBlock
               subject_name={"Education"}
               short_summary={"Education policy consists of the principles & policies of the educational sphere & the collection of laws that govern the operation of education systems."}
               image={educationimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
         </Row>
 
         <Row className={styles.rows}>
           <Col>
-            <SubjectBlock
-              slug="race"
+            <Link to="/subjects/terrorism" className={styles.link}><SubjectBlock
               subject_name={"National Security"}
               short_summary="National security is the security of a nation state, including its citizens, economy, & institutions, which is regarded as a duty of government."
               image={nsimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+            <Link to="/subjects/violence" className={styles.link}><SubjectBlock
               subject_name={"Criminal Justice"}
               short_summary={"The criminal justice system is the set of agencies & processes established by governments to control crime & impose penalties on those who violate laws."}
               image={cjimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
 
           <Col>
-            <SubjectBlock
-              slug="race"
+            <Link to="/subjects/marriage" className={styles.link}><SubjectBlock
               subject_name={"LGBTQ+ Rights"}
               short_summary={"LGBTQ+ advocates have overcome enormous challenges & risks to their own personal safety to fight discrimination & demand equal rights."}
               image={lgbtqimg}>
-            </SubjectBlock>
+            </SubjectBlock></Link>
           </Col>
         </Row>
 

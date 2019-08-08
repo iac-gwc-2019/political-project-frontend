@@ -1,5 +1,5 @@
-//const query = require('../queries/peopleHouse.graphql');
-//import senateQuery from '../queries/peopleSenate.graphql';
+import {getBillsCosponsoredBy} from './fetchBills';
+
 const fetch = require('node-fetch');
 
 export function getPeopleById(id){
@@ -24,8 +24,18 @@ export function getPeopleById(id){
    .then(res => res.json())
    .then(res => {
      console.log(res)
-      return res.data.personById;
-   });
+     if(res.errors) {
+      return Promise.reject(new Error('Bill does not exist'))
+    }
+    let person = {...res.data.personById};
+    console.log(person);
+    return getBillsCosponsoredBy(person.id)
+       .then(bills => {
+         person.bills = bills;
+         return person
+       });
+    });
 }
 
-// TODO: export, call these things in the right place
+
+//return res.data.personById;

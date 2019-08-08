@@ -22,6 +22,7 @@ export default function Politicians({match}) {
       getPeopleById(match.params.politicianId)
         .then(data => {
           console.log('data', data);
+          console.log('data.bills', data.bills)
           setPoliticianData(data)
         })
         .catch(err => {
@@ -56,7 +57,14 @@ export default function Politicians({match}) {
       <Col xs={1}>
       </Col>
       <Col>
-        <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
+      <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
+        {
+          politicianData
+          ? politicianData.bills.map((bill) => {
+            return <BillsBlock key={bill.bill_id} bill={bill}/>
+          })
+          : null
+        }
       </Col>
       <Col>
       {politicianData && <TweetSidebar twitter_account={politicianData.twitter_account}/>}
