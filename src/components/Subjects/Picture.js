@@ -5,7 +5,7 @@ export default function Picture() {
 
   return (
     <div className={styles.subjectImage}>
-      <img src='https://liberal-international.org/wp-content/uploads/2017/06/500px-Pink_Venus_symbol.svg_.png' width= "150px" height="150px"/>
+      <img src='http://www.sarfrance.net/pics/b/46/468376_light-bulb-idea-png.png' width= "170px" height="170px"/>
     </div>
   )
 }
