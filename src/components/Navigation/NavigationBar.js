@@ -55,11 +55,6 @@ export const NavigationBar = () => (
               <Link to="/politicians">Politicians</Link>
           </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/bills">Bills</Link>
-            </Nav.Link>
-          </Nav.Item>
         </Nav>
         <Form inline>
           <Button className = "btn" href="/about">about politigo</Button>

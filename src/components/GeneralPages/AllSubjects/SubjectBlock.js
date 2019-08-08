@@ -18,7 +18,7 @@ export default function SubjectBlock({subject_name, short_summary, image}) {
           <Card.Text>
             {short_summary}
           </Card.Text>
-          <Button href="/womensrights" variant="outline-primary">Learn more</Button>
+          <Button href="/#/subjects/womensrights" variant="outline-primary">Learn more</Button>
         </Card.Body>
       </Card>
     </div>

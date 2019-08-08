@@ -5,7 +5,6 @@ import Subjects from './Subjects/Subjects';
 import Politicians from './Politicians/Politicians';
 import Bills from './Bills/Bills';
 import AllSubjects from './GeneralPages/AllSubjects/AllSubjects';
-import AllBills from './GeneralPages/AllBills/AllBills';
 import AllPoliticians from './GeneralPages/AllPoliticians/AllPoliticians';
 import SearchAll from './Search/SearchAll'
 import About from './About/About'

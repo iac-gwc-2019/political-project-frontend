@@ -17,6 +17,7 @@ export default function AllPoliticians() {
     }
   });
 
+
   const allPoliticianBlocks = politicianData ? politicianData.map(politician => {
     return (
       <PoliticianBlock
@@ -33,6 +34,7 @@ export default function AllPoliticians() {
   return (
     <div className={styles.main}>
       <h2>Politicians</h2>
+      <p>Learn more about politicians</p>
       {allPoliticianBlocks}
     </div>
   )

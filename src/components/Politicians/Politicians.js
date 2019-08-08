@@ -57,9 +57,6 @@ export default function Politicians({match}) {
       </Col>
       <Col>
         <Badge className={styles.blockTitle} pill variant="primary">Relevant Bills</Badge>
-        {/* <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock>
-        <BillsBlock></BillsBlock> */}
       </Col>
       <Col>
       {politicianData && <TweetSidebar twitter_account={politicianData.twitter_account}/>}
