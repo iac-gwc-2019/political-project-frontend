@@ -20,7 +20,6 @@ export default function Bills({match}) {
     if (!billData) {
       getBillById(match.params.billSlug)
         .then(data => {
-          console.log(data)
           setBillData(data)
 
         })

@@ -21,8 +21,6 @@ export default function Politicians({match}) {
     if (!politicianData) {
       getPeopleById(match.params.politicianId)
         .then(data => {
-          console.log('data', data);
-          console.log('data.bills', data.bills)
           setPoliticianData(data)
         })
         .catch(err => {

@@ -4,7 +4,6 @@ import Picture from './Picture.js';
 import Summary from './Summary.js';
 import BillsBlock from './BillsBlock.js';
 import styles from './SubjectStyle.scss';
-import jsonData from '../../../mock_data/subjects.json'; // TODO CLEANUP
 import {Card} from 'react-bootstrap';
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
@@ -18,7 +17,6 @@ export default function Subjects({history, match}) {
     if (!subjectData) {
       getBillsBySubject(match.params.subjectName)
         .then(data => {
-          console.log(data)
           setSubjectData(data)
         })
         .catch(err => {
