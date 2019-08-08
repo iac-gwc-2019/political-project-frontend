@@ -54,7 +54,7 @@ export const NavigationBar = () => (
          </Nav.Item>
        </Nav>
        <Form inline>
-         <Button className = "btn" href="/about">about politigo</Button>
+         <Link className = "btn" to="/about">about politigo</Link>
        </Form>
      </Navbar.Collapse>
    </Navbar>
