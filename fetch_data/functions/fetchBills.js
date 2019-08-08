@@ -3,7 +3,7 @@ import {getPeopleById} from './fetchPoliticans';
 const fetch = require('node-fetch');
 
 export function getBillById(id){
-   return fetch('http://localhost:4000/', {
+   return fetch('https://politigo-backend.herokuapp.com/', {
    method: 'POST',
    headers: { 'Content-Type': 'application/json' },
    body: JSON.stringify({ query: `{
@@ -38,7 +38,7 @@ export function getBillById(id){
 }
 
 export function getBillsBySubject(subject){
-   return fetch('http://localhost:4000/', {
+   return fetch('https://politigo-backend.herokuapp.com/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `{
@@ -65,7 +65,7 @@ export function getBillsBySubject(subject){
 }
 
 export function getBillsCosponsoredBy(sponsorId){
-   return fetch('http://localhost:4000/', {
+   return fetch('https://politigo-backend.herokuapp.com/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `{

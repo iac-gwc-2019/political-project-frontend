@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 async function getPeopleAsync() {
-    const response = await fetch('http://localhost:4000/', {
+    const response = await fetch('https://politigo-backend.herokuapp.com/', {
         body: JSON.stringify({ query: `{
         peopleHouse {
         short_title
@@ -20,11 +20,10 @@ async function getPeopleAsync() {
         headers: { 'Content-Type': 'application/json' },
         });
     const data = await response.json()
-    console.log(data)
     const peopleHouse = data.data.peopleHouse;
 
 
-    const response2 = await fetch('http://localhost:4000/', {
+    const response2 = await fetch('https://politigo-backend.herokuapp.com/', {
         body: JSON.stringify({ query: `{
         peopleSenate {
         short_title
